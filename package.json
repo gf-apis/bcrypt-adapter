@@ -4,7 +4,7 @@
   "description": "Bcrypt password adapter for @gf-apis components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard --fix && nyc mocha"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,21 @@
     "bcrypt": "3.0.0"
   },
   "devDependencies": {
+    "chai": "4.1.2",
+    "dirty-chai": "2.0.1",
+    "mocha": "5.2.0",
+    "nyc": "12.0.2",
     "standard": "*"
+  },
+  "nyc": {
+    "include": [
+      "index.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary",
+      "html"
+    ]
   },
   "standard": {
     "env": "mocha"

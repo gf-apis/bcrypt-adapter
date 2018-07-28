@@ -4,11 +4,17 @@ const {PasswordAdapter} = require('@gf-apis/core/adapters/PasswordAdapter')
 const Bcrypt = require('bcrypt')
 
 class BcryptAdapter extends PasswordAdapter {
+  constructor (opts) {
+    var options = opts || {}
+    super(options)
+    this.rounds = options.rounds || 8
+  }
+
   validate (req, res, hash, plain, callback) {
     Bcrypt
       .compare(plain, hash)
       .then(valid => {
-        callback(null, req, res, false)
+        callback(null, req, res, valid)
       })
       .catch(err => {
         callback(err, req, res, false)
@@ -17,7 +23,7 @@ class BcryptAdapter extends PasswordAdapter {
 
   generate (req, res, plain, callback) {
     Bcrypt
-      .hash(plain)
+      .hash(plain, this.rounds)
       .then(hash => {
         callback(null, req, res, hash)
       })
