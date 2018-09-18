@@ -1,6 +1,6 @@
 'use strict'
 
-const {PasswordAdapter} = require('@gf-apis/core/adapters/PasswordAdapter')
+const {PasswordAdapter} = require('@gfa/core/adapters/PasswordAdapter')
 const Bcrypt = require('bcrypt')
 
 class BcryptAdapter extends PasswordAdapter {
