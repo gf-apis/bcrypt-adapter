@@ -1,23 +1,23 @@
 {
-  "name": "@gf-apis/bcrypt-adapter",
-  "version": "0.1.0",
-  "description": "Bcrypt password adapter for @gf-apis components",
+  "name": "@gfa/bcrypt-adapter",
+  "version": "0.2.0",
+  "description": "Bcrypt password adapter for @gfa components",
   "main": "index.js",
   "scripts": {
     "test": "standard --fix && nyc mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gf-apis/bcrypt-adapter.git"
+    "url": "git+https://github.com/pauloddr/gfa-bcrypt-adapter.git"
   },
-  "author": "Panayotis Procopiou <gfapis@pauloddr.com>",
+  "author": "Panayotis Procopiou <gfa@pauloddr.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gf-apis/bcrypt-adapter/issues"
+    "url": "https://github.com/pauloddr/gfa-bcrypt-adapter/issues"
   },
-  "homepage": "https://github.com/gf-apis/bcrypt-adapter#readme",
+  "homepage": "https://github.com/pauloddr/gfa-bcrypt-adapter#readme",
   "dependencies": {
-    "@gf-apis/core": "github:gf-apis/core",
+    "@gfa/core": "github:pauloddr/gfa-core",
     "bcrypt": "3.0.0"
   },
   "devDependencies": {
