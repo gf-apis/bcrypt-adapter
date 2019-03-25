@@ -1,6 +1,11 @@
-# @gfa/bcrypt-adapter
+### THIS PROJECT HAS BEEN DISCONTINUED.
 
-[![Build Status](https://travis-ci.com/pauloddr/gfa-bcrypt-adapter.svg?branch=master)](https://travis-ci.com/pauloddr/gfa-bcrypt-adapter)
-[![Coverage Status](https://coveralls.io/repos/github/pauloddr/gfa-bcrypt-adapter/badge.svg?branch=master)](https://coveralls.io/github/pauloddr/gfa-bcrypt-adapter?branch=master)
+Read more [here](https://github.com/pauloddr/gfa-guides/blob/master/README.md).
+
+Original README archived below.
+
+---
+
+# @gfa/bcrypt-adapter
 
 [__Bcrypt__](https://github.com/kelektiv/node.bcrypt.js) adapter for [__@gfa/*__] components.
